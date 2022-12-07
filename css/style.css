@@ -48,11 +48,12 @@ h4 {
 
 a {
     text-decoration: none;
+    color: var(--black);
 }
 
 .container {
     width: 90%;
-    max-width: 100rem;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -83,11 +84,11 @@ a {
 
 /* Header */
 .header {
-    background-image: url(../img/hero2.jpg);
+    background-image: url(../img/hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 60rem;
+    height: 66rem;
     position: relative;
 }
 
@@ -126,6 +127,16 @@ a {
     margin-bottom: 1.5rem;
 }
 
+@media (min-width: 768px) {
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+
+
 /* Entradas */
 .entrada {
     border-bottom: 1px solid var(--lightgray);
@@ -154,8 +165,89 @@ a {
     padding: 2rem 0 5rem 0;
 }
 
+/* Eventos Sidebar */
+.widget-evento {
+    border-bottom: 2px solid var(--lightgray);
+    margin-bottom: 2rem;
+}
+
+.widget-evento:last-of-type {
+    border: none;
+    margin-bottom: 5rem;
+}
+
+.widget-info-bold {
+    font-weight: 700;
+}
+
+/* Nosotros */
+.nosotros {
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 1200px) {
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .nosotros__text p {
+        margin-top: 0;
+    }
+}
+
+.nosotros__text {
+    text-align: justify;
+    line-height: 1.5;
+    font-family: var(--paragraphFont);
+    font-size: 1.8rem;
+}
+
+/* Cursos */
+.cursos {
+    margin-bottom: 5rem;
+}
+
+.curso {
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+    .cursos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        
+    }
+
+    .curso__title {
+        margin-bottom: 2rem;
+    }
+
+    .curso__img {
+        height: 20rem;
+    }
+}
+
+.curso__img {
+    border-radius: 5px;
+}
+
+.btn--curso {
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: #FDD017;
+}
+
 /* Footer */
 .footer {
     background-color: var(--black);
-    padding: 3rem;
+    color: var(--white);
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.footer p {
+    margin: 0;
 }
