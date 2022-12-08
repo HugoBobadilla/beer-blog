@@ -259,6 +259,7 @@ a {
 .field {
     display: flex;
     margin-bottom: 2rem;
+    align-items: center;
 }
 
 
@@ -299,6 +300,7 @@ textarea.input-field {
 @media (max-width: 768px) {
     .field {
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .field label {
@@ -309,6 +311,7 @@ textarea.input-field {
 
     .input-field {
         flex-grow: 0;
+        width: 100%;
     }
 
     .btn--submit {
